@@ -7,6 +7,91 @@
     <title>Sign-up Form</title>
 </head>
 <body>
-    
+    <!--Side Section-->
+    <div class="side-section">
+        <div class="logo_container">
+            <img src="./images/odin-lined-logo.png" alt="Odin logo">
+        </div>
+        <div class="credits">
+            Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a href="https://unsplash.com/">Unsplash</a>
+        </div>
+    </div>
+    <!--Main Section-->
+    <div class="main-section">
+        <!--Heading-->
+        <div class="heading">
+            <h1>
+                This is not a real online service! You know you need something like this in your life to help you realize you deepest dreams.
+                Sign up <span class="heading-span">now</span> to get started.
+            </h1>
+            <h1>
+                You <span class="heading-span">Know</span> you want to.
+            </h1>
+        </div>
+        <!--Sign-up Form-->
+        <form action="#" method="get">
+            <fieldset>
+                <legend>Let's do this!</legend>
+                <label for="first-name">
+                    FIRST NAME
+                </label>
+                <input 
+                    type="text" 
+                    name="first-name" 
+                    id="first-name"
+                    required
+                >
+                <label for="last-name">
+                    LAST NAME
+                </label>
+                <input 
+                    type="text" 
+                    name="last-name" 
+                    id="last-name" 
+                    required
+                >
+                <label for="email">
+                    EMAIL
+                </label>
+                <input 
+                    type="email" 
+                    name="email" 
+                    id="email" 
+                    required
+                >
+                <label for="phone">
+                    PHONE NUMBER
+                </label>
+                <input 
+                    type="tel" 
+                    name="phone" 
+                    id="phone" 
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" 
+                    required
+                >
+                <label for="password">
+                    PASSWORD
+                </label>
+                <input 
+                    type="password" 
+                    id="password" 
+                    name="password" 
+                    minlength="8" 
+                    required 
+                >
+                <label for="confirm-password">
+                    Confirm Password:
+                </label>
+                <input 
+                    type="password" 
+                    id="confirm-password"
+                    name="confirm-password" 
+                    required 
+                >
+            </fieldset>
+            <button type="submit">Sign Up</button>
+            <div class="account-question">Already have account?<a href="#">Login in</a></div>
+        </form>
+    </div>
 </body>
 </html>
